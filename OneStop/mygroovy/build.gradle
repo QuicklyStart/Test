@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile localGroovy()
+    compile gradleApi()
+    compile project(':buildSrc')
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
